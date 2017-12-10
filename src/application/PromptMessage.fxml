@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="117.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PromptMessageController">
+   <children>
+      <Label fx:id="message" layoutX="11.0" layoutY="32.0" text="The field have mismatch type. Please enter the correct type." />
+      <Button fx:id="closeButton" layoutX="169.0" layoutY="60.0" mnemonicParsing="false" onAction="#closeButton" prefHeight="25.0" prefWidth="63.0" text="Close" />
+   </children>
+</AnchorPane>

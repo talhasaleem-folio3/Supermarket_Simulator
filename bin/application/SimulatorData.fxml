@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SimulatorDataController">
+   <children>
+      <Label layoutX="59.0" layoutY="68.0" text="Enter the required data to simulate.">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="124.0" text="Generate items with an interarrival time according to a random distribution." />
+      <Label layoutX="59.0" layoutY="168.0" text="Distribution:" />
+      <ChoiceBox fx:id="distributionChoiceBox" layoutX="142.0" layoutY="164.0" prefWidth="150.0" />
+      <Label layoutX="59.0" layoutY="233.0" text="Enter mean interarrival time of customer." />
+      <Label layoutX="59.0" layoutY="277.0" text="Regular Customer:" />
+      <Label layoutX="59.0" layoutY="313.0" text="Express Customer:" />
+      <Label layoutX="59.0" layoutY="368.0" text="Enter mean service time of customer." />
+      <Label layoutX="59.0" layoutY="413.0" text="Regular Server:" />
+      <Label layoutX="59.0" layoutY="448.0" text="Express Server:" />
+      <Label layoutX="59.0" layoutY="490.0" text="Enter total time of service." />
+      <Label layoutX="59.0" layoutY="526.0" text="Time:" />
+      <TextField fx:id="regularInterarrivalField" layoutX="191.0" layoutY="274.0" promptText="Interarrival Time" />
+      <TextField fx:id="expressInterarrivalField" layoutX="190.0" layoutY="309.0" promptText="Interarrival Time" />
+      <TextField fx:id="regularServiceField" layoutX="189.0" layoutY="409.0" promptText="Service Time" />
+      <TextField fx:id="expressServiceField" layoutX="189.0" layoutY="443.0" promptText="Service Time" />
+      <TextField fx:id="serviceTimeField" layoutX="189.0" layoutY="521.0" promptText="MM:SS" />
+      <Label layoutX="367.0" layoutY="526.0" text="minutes." />
+      <Button fx:id="okButton" layoutX="478.0" layoutY="273.0" mnemonicParsing="false" onAction="#okButton" prefHeight="25.0" prefWidth="57.0" text="OK" />
+      <Button fx:id="cancelButton" layoutX="478.0" layoutY="309.0" mnemonicParsing="false" onAction="#cancelButton" text="Cancel" />
+   </children>
+</AnchorPane>

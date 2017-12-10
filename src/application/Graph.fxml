@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="625.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GraphController">
+   <children>
+      <Label layoutX="247.0" layoutY="14.0" text="Graphs">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="77.0" text="Regular System">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <BarChart fx:id="regularQueue" barGap="0.0" categoryGap="0.0" layoutX="26.0" layoutY="142.0" prefHeight="171.0" prefWidth="500.0" title="Regular Queue Graph">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <BarChart fx:id="regularServer" barGap="0.0" categoryGap="0.0" layoutX="26.0" layoutY="355.0" prefHeight="171.0" prefWidth="500.0" title="Regular Server Graph">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Button fx:id="nextButton" layoutX="195.0" layoutY="542.0" mnemonicParsing="false" onAction="#nextButton" text="Next" />
+      <Button fx:id="exitButton" layoutX="290.0" layoutY="542.0" mnemonicParsing="false" onAction="#exitButton" text="Exit" />
+   </children>
+</AnchorPane>
